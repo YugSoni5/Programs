@@ -2,22 +2,31 @@
 
 int main()
 {
-    int rows = 5; // Number of lines to print
+    int i, j, k;
+    int n = 6; // number of rows
 
-    for (int i = 0; i < rows; i++)
+    for (i = 0; i < n; i++)
     {
-        // First part: Decreasing from i to 0
-        for (int j = i; j >= 0; j--)
+
+        // Print spaces
+        for (j = 0; j < n - i - 1; j++)
         {
-            printf("%d", j);
-        }
-        // Second part: Increasing from 1 to i
-        for (int j = 1; j <= i; j++)
-        {
-            printf("%d", j);
+            printf("  ");
         }
 
-        printf("\n"); // Move to the next line
+        // Print decreasing numbers
+        for (j = i; j >= 0; j--)
+        {
+            printf("%d ", j);
+        }
+
+        // Print increasing numbers
+        for (j = 1; j <= i; j++)
+        {
+            printf("%d ", j);
+        }
+
+        printf("\n");
     }
 
     return 0;
