@@ -178,3 +178,5 @@ If this repository helped you, consider giving it a ⭐
 ## 🔥 Final Note
 
 > “Mastering C builds the foundation for mastering all systems programming.”
+
+# `ThankYou`
